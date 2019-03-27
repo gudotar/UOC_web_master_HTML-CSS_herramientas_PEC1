@@ -1,0 +1,22 @@
+{
+  "name": "uoc_web_master_html-css_herramientas_pec1",
+  "version": "1.0.0",
+  "description": "Práctica de asignatura HTML y CSS herramientas",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gudotar/UOC_web_master_HTML-CSS_herramientas_PEC1.git"
+  },
+  "author": "Jabier Santamaria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gudotar/UOC_web_master_HTML-CSS_herramientas_PEC1/issues"
+  },
+  "homepage": "https://github.com/gudotar/UOC_web_master_HTML-CSS_herramientas_PEC1#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
