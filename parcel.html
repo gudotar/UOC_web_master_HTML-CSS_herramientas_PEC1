@@ -5,8 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        
+        <header>
+            <h1><a href="./index.html">Front-end development encyclopedia</a></h1>
+            <ul class="breadcrumb">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./modulebundlers.html">Module blunders</a></li>
+                <li>Parcel</li>
+            </ul>
+        </header>
+        <hr>
+        <main>
+            <img src="./img/parcel.jpg">
+            <p>parcel-js is a dependencies management system for JS, CSS and AJAX resources. Although it is an independent JS library, it can also be used as a jQuery plugin.</p>
+            <p>Basically is a DSL that allows you to declare dependencies between artifacts and lazy load them whenever your system need them.</p>
+            <p>Parcel-js solves the dynamic lazy loading problem. In some application scenarios, like a webtop or a Single Page Interface application, you should not load all of the libraries and artifacts you application needs. The point is that some libraries only are needed when the user want to do some action in your system for the first time. For example, in a webtop, when a user launch an application then the system needs to download the code for it but not before. In fact not all the users will see the same applications in its menu in a webtop enviroment. Downloading all the code for all applications available for all users in a webtop is simply overkill.</p>
+        </main>
+        <hr>
+        <footer>
+            <p>Other module bundlers:</p>
+            <ul>
+                <li><a href="./webpack.html">Webpack</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
