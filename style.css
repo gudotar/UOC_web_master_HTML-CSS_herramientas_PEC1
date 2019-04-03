@@ -1,9 +1,7 @@
-body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
-  }
-
+html {
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 14px;
+}
 /* Style the list */
 ul.breadcrumb {
   padding: 10px 16px;
