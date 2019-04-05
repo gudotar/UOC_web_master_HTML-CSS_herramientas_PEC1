@@ -18,19 +18,23 @@
                 <li>Parcel</li>
             </ul>
         </header>
-        <hr>
-        <main>
-            <img src="./img/parcel.jpg">
-            <p>parcel-js is a dependencies management system for JS, CSS and AJAX resources. Although it is an independent JS library, it can also be used as a jQuery plugin.</p>
-            <p>Basically is a DSL that allows you to declare dependencies between artifacts and lazy load them whenever your system need them.</p>
-            <p>Parcel-js solves the dynamic lazy loading problem. In some application scenarios, like a webtop or a Single Page Interface application, you should not load all of the libraries and artifacts you application needs. The point is that some libraries only are needed when the user want to do some action in your system for the first time. For example, in a webtop, when a user launch an application then the system needs to download the code for it but not before. In fact not all the users will see the same applications in its menu in a webtop enviroment. Downloading all the code for all applications available for all users in a webtop is simply overkill.</p>
-        </main>
-        <hr>
-        <footer>
-            <p>Other module bundlers:</p>
-            <ul class="others">
-                <li><a class="fab fa-weebly" href="./webpack.html"> Webpack</a></li>
-            </ul>
-        </footer>
+        <div class="row">
+            <div class="col-9">
+                <picture>
+                    <source srcset="./img/parcel_small.jpg" media="(max-width: 768px)">
+                    <source srcset="./img/parcel.jpg">
+                    <img src="./img/parcel.jpg" alt="Parcel">
+                </picture> 
+                <p>parcel-js is a dependencies management system for JS, CSS and AJAX resources. Although it is an independent JS library, it can also be used as a jQuery plugin.</p>
+                <p>Basically is a DSL that allows you to declare dependencies between artifacts and lazy load them whenever your system need them.</p>
+                <p>Parcel-js solves the dynamic lazy loading problem. In some application scenarios, like a webtop or a Single Page Interface application, you should not load all of the libraries and artifacts you application needs. The point is that some libraries only are needed when the user want to do some action in your system for the first time. For example, in a webtop, when a user launch an application then the system needs to download the code for it but not before. In fact not all the users will see the same applications in its menu in a webtop enviroment. Downloading all the code for all applications available for all users in a webtop is simply overkill.</p>
+            </div>
+            <div class="col-3">
+                <p>Other module bundlers:</p>
+                <ul class="others">
+                    <li><a class="fab fa-weebly fa-lg" href="./webpack.html"> Webpack</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
