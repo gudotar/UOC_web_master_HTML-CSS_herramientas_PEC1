@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+#welcome-message {
+  display: none;
+  background-color: #d5e6ed;
+  color: #662d91;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -70,4 +78,8 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
-} 
+}
+
+.right {
+  float: right;
+}
