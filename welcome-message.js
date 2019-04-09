@@ -35,11 +35,18 @@
         }
         return null;
     }
-
+    /* El mensaje de bienvenida sólo aparece la primera vez que se carga
+    la página index.html. A partir de ahí se carga una cookie que se 
+    controla si existe para sacar el mensaje o no. La expiración de la
+    cookie va asociada a la sesión (0 days)
+    */
     var welcomeMessage = document.getElementById('welcome-message');
     if (welcomeMessage == null) {
         return;
     }
+
+    // Si no existe la cookie actualizamos el display del identificador
+    // con 'block' para hacer visible el mensaje.
     var cookie = readCookie('seen-welcome-message');
     if (cookie != null && cookie == 'yes') {
         welcomeMessage.style.display = 'none';
@@ -47,7 +54,7 @@
         welcomeMessage.style.display = 'block';
     }
     
-    // Set/update cookie
+    // Actualizamos/creamos cookie
     var cookieExpiry = welcomeMessage.getAttribute('data-cookie-expiry');
     if (cookieExpiry == null) {
         cookieExpiry = 0;
