@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Font Awesome 5 Free', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-/* Para distinguir el mensjae de bienvendida de la cabecera*/
 #welcome-message {
   display: none;
   background-color: #d5e6ed;
@@ -17,7 +10,6 @@ html {
   padding: 1em;
 }
 
-/* Gestión de CSS para RWD */
 .row::after {
   content: "";
   clear: both;
@@ -29,13 +21,19 @@ html {
   padding: 15px;
 }
 
-/* RWD para dispositivos móviles, siendo 'first mobile' con esta regla... */
+html {
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* For mobile phones: */
 [class*="col-"] {
   width: 100%;
 }
 
-/* Para dispositivos mayores de 768px */
 @media only screen and (min-width: 768px) {
+  /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -50,35 +48,38 @@ html {
   .col-12 {width: 100%;}
 }
 
-/* Menú de navegación superior */
+/* Style the list */
 ul.breadcrumb, ul.others {
   padding: 10px 16px;
   list-style: none;
   background-color: #eee;
 }
 
+/* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
   font-size: 18px;
 }
 
+/* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
 }
 
+/* Add a color to all links inside the list */
 ul.breadcrumb li a {
   color: #0275d8;
   text-decoration: none;
 }
 
+/* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
 
-/* Flotar enalces de más lenguajes y modules blunders a la derecha */
 .right {
   float: right;
 }
